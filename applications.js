@@ -4,7 +4,7 @@ $(document).ready(function() {
         $('div').slideToggle();
   }); 
   $('div').mouseover(function() {
-    $('img').slideToggle();
+    $('img').slideDown();
     // body...
   })
 });

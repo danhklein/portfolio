@@ -98,9 +98,17 @@ aside {
       width: 37%;
 
 }
-img {display: none;}
+img {display: none;
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
+
+}
+
+
 
 .myButton {
+  font: 5em "Hilo-Deco", Hilo-Deco;
   background-color:green;
   -moz-border-radius:28px;
   -webkit-border-radius:28px;
@@ -109,7 +117,6 @@ img {display: none;}
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
-  font-family:Arial;
   font-size:17px;
   font-weight:bold;
   padding:16px 31px;
