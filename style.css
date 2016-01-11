@@ -58,12 +58,12 @@ body {
 }
   }
 
-a {
+a, a:active {
   color:white;
   text-decoration: none;
 }
 
- a:clicked {
+ a:active {
   text-decoration: none;
  }
   
@@ -87,7 +87,7 @@ article {
   float: left;
 }
 
-span {
+strong {
   background-color: red;
 }
 
@@ -153,8 +153,9 @@ img {
   top:1px;
 }
 
-footer {
+footer p {
   margin-top: 50px;
   clear: both;
+  display: inline-block;
 }
 
