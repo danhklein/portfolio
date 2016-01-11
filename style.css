@@ -153,9 +153,12 @@ img {
   top:1px;
 }
 
-footer p {
+footer {
   margin-top: 50px;
   clear: both;
+}
+footer p {
+  
   display: inline-block;
 }
 
