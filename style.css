@@ -52,22 +52,25 @@ table {
 body {
   
   color: white;
-  background-color: blue;
+  /* Generated with http://gradient.quasi.ink */
+  background-size: cover;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAADoUlEQVQ4Tz2SW09cVRiGn7X2HoYzzExBoBwKhcqpLQZ6gY01lXKoxnhhCgq2sYlXXHihib/AH2C88E6jiU2DqU2xplGD1ZbYNhZKpaVAOZlSCpkyDAPMns3M7L3M2jR+yUpWspJ3Pe/3vuJMzzklnAyk6yDkLrY0SVvw4bs9uLZi5Lv7PM2P8tZnb7J04xHLD57T1drN1i8WzVYNhcF8/oyMMZT6nrKWAKK365xKC5DCxdDHzOD5+janOzoo2JaIaDaXHv1F4ggcqjvA9m2btroG5JU1upwuEvscwisul/wjrB6cRPR1nlVCGCjpgDIRKYfcwmzKimqpDlSymxsl1FTBZiLO2NLfzN6a5ZVgM9nTkppwM2nhgIxz23zMlPkPore7XwkkIPDhZydpU1FdwhtdJ0j6BC2tzdx7PMr13+6gQgqfmYX7JM7qZJjkah7HCk8yH7nPfO4EpulHnOnqVwiBFBIhJFbCpq6hjobGRnaUy7OVOc6ffQe7IIOvf/yK9JqPlck5Apl5zCyEEek8CvwQVbYHJHq7B5SmE0IgAMdRZOXkkEo5BEMBTr32Kofbj3AzPMy16z8w+VOasuJ9BPN8VJVWMjX2DDthkTQlSglEb8+A8i7atKuQhuE9JOwEnwwOMjezyMj4Xd7+6ChJZ5ufLzzE52Tghndofb2e6csb+JK5PCmdI5bafGEZgZT6B4XUot4dykMlRGJxNnYtpIpRVVuOKMhgaXGJNo7RVn6ctathYvEIojPA3L/LiPdOf6C0TT3ath6pdI0Eid1dpCnBVCRdRc3RGhZiMTr6Opm5dwt5MYu2iia+Gb9AbfF+2otOIvp0KErgep49VXAVhqbWQUlFLG7R2FyHekmSDPopKivn9/Fhtsaf0lRaxexsHJH22rNXGzSgDkUKL5Q9TjCUgTIklp2gvuUAVtUWL58o4dsvLnLqeBsi3yK6AA+H1kmZJsFASIfS7/nVFl3X1TLeLvUoCT7hIlIuayLN4Jfn2YhOs768RW3wIKM3f2V2YgORyGEzso0pJaKvZ8AjdJUW06B7geh9pg1BJi7SdjGr8wg1FFKTVc56dB6XBFcv38XvBDBVBo5P4KS3XljWNErtpSxNj9QwJC4mfpWLbUeobN9P3L9Ftb+erIDF1MINAsUtzEwsE1+0IeVguUldm/f3/P0/uuTS26nhpkGY4DOJWjt8+vnHHD5Uwx8jo1wbvkJmcTYVDQFGhh5AzMBnZPIf4NuWeTbbBjQAAAAASUVORK5CYII=");
+}
   }
 
 a {
   color:white;
   text-decoration: none;
-
 }
 
-  header {background-color: Gray;
-
-  }
+ a:clicked {
+  text-decoration: none;
+ }
   
   h1 {text-align: center;
     padding:1em;
     font: 5em "Hilo-Deco", Hilo-Deco;
+    text-decoration: none;
     
     position: 20%}
 
@@ -75,12 +78,18 @@ a {
   
   background-color: blue;
   line-height: 22px;
-  float: left;
-  margin: 0 1.5%;
-  width: 56%;
 }
 
-div {display: none;}
+article {
+  display: none;
+  margin: 0 1.5%;
+  width: 40%;
+  float: left;
+}
+
+span {
+  background-color: red;
+}
 
  h2 {font-size: 3em;
     
@@ -88,19 +97,30 @@ div {display: none;}
     border-color: green;
   }
 
-  h2 a {margin-left: 10px; }
+  h2 a {
+    margin-left: 10px; 
+  }
 
- p {display: block;}
+ p {
+  display: block;
+  margin-top: 10px;
+ }
 
 aside {
-      float:right;
-      margin: 0 1.5%;
-      width: 37%;
+    float:right;
+    margin: 0 1.5%;
+    width: 37%;
 
 }
-img {display: none;
-    width: 98%;
-    border-radius: 90%
+img {
+  display: none;
+  float:left;
+}
+
+#broadcity {
+  
+  margin: 0 1.5%;
+  width: 90%;
 }
 #malort {
     border-radius: 50%;
@@ -131,5 +151,10 @@ img {display: none;
 .myButton:active {
   position:relative;
   top:1px;
+}
+
+footer {
+  margin-top: 50px;
+  clear: both;
 }
 

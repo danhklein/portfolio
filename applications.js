@@ -1,9 +1,9 @@
 $(document).ready(function() {
   
   $('button').click(function() {
-        $('div').slideToggle();
+        $('article').slideToggle();
   }); 
-  $('div').mouseover(function() {
+  $('span').mouseover(function() {
     $('img').slideDown();
     // body...
   })
