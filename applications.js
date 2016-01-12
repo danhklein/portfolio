@@ -1,10 +1,10 @@
 $(document).ready(function() {
   
-  $('button').click(function() {
-        $('article').slideToggle();
+  $('#malort').mouseover(function() {
+        ('#bio').slideToggle();
   }); 
-  $('strong').mouseover(function() {
-    $('img').slideDown();
+  $('span').mouseover(function() {
+    $('#broadcity').slideDown();
     // body...
   })
 });

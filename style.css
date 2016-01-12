@@ -47,6 +47,50 @@ table {
   border-spacing: 0;
 }
 
+/*framework*/
+
+body {
+  margin: 0;
+  padding: 40px;
+  background: #EFEFEF;
+  
+}
+
+#portfolio {
+  margin: 0;
+}
+
+#portfolio .portfolio-item {
+  display: block;
+  float: left;
+  width: 200px;
+  height: 200px;
+  -webkit-perspective: 600px;
+  /*margin: 10px;*/
+}
+
+#portfolio .portfolio-item .primary,
+#portfolio .portfolio-item .secondary {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background: #CCC;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#portfolio .portfolio-item .secondary {
+  padding: 20px;
+  width: 160px;
+  height: 160px;
+}
+
+#portfolio .portfolio-item .secondary h2 {
+  margin-top: 0px;
+}
+
 /*index */
 
 body {
@@ -58,34 +102,34 @@ body {
 }
   }
 
+ul {
+  color:white;
+  text-decoration: none;
+  display: inline-block;
+}
+
 a, a:active {
   color:white;
   text-decoration: none;
+  display: inline-block;
 }
 
- a:active {
-  text-decoration: none;
- }
+
   
-  h1 {text-align: center;
+h1 {
+  text-align: center;
     padding:1em;
     font: 5em "Hilo-Deco", Hilo-Deco;
     text-decoration: none;
     
-    position: 20%}
+    position: 20%
+}
 
  section {
   
-  background-color: blue;
   line-height: 22px;
 }
 
-article {
-  display: none;
-  margin: 0 1.5%;
-  width: 40%;
-  float: left;
-}
 
 strong {
   background-color: red;
@@ -122,43 +166,66 @@ img {
   margin: 0 1.5%;
   width: 90%;
 }
-#malort {
-    border-radius: 50%;
-    height: 50%;
-    width: 50%;
-}
 
-
-.myButton {
-  background-color:gray;
-  -moz-border-radius:28px;
-  -webkit-border-radius:28px;
-  border-radius:28px;
-  border:1px solid #18ab29;
-  display:inline-block;
-  cursor:pointer;
-  color:#ffffff;
-  font-family:Arial;
-  font-size:17px;
-  font-weight:bold;
-  padding:16px 31px;
-  text-decoration:none;
-  text-shadow:0px 0px 0px #2f6627;
-}
-.myButton:hover {
-  background-color:blue;
-}
-.myButton:active {
-  position:relative;
-  top:1px;
-}
 
 footer {
   margin-top: 50px;
   clear: both;
 }
+
+
 footer p {
   
   display: inline-block;
+}
+
+/* CARD-FLIP */
+#portfolio {
+  position: relative;
+  width: 50%;
+  
+
+}
+
+.primary,
+.secondary {
+  position: absolute;
+  transform-style: preserve-3d;
+  transition-duration: 1s;
+}
+
+.primary{
+z-index: 2;
+transform: rotateY(0deg);
+}
+
+.secondary {
+  transform: rotateY(180deg);
+  transform-duration: 1s;
+}
+
+.portfolio-item {
+  transform-style: preserve-3d;
+  transition-duration: 1s;
+  margin-right: 20px;
+
+}
+
+.portfolio-item:hover /*.primary*/
+{
+  transform: rotateY(180deg);
+
+}
+
+.hidden {
+  display: none;
+}
+
+#bio {
+  display:none;}
+
+#about {
+  width: 50%;
+  display: block;
 }
 
