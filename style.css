@@ -145,6 +145,9 @@ strong {
     margin-left: 10px; 
   }
 
+  video {float: left;
+    width: 50%;}
+
  p {
   display: block;
   margin-top: 10px;
